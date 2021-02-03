@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1893448595, guid: a040fb66244a7f54289914d98ea4ef7d, type: 3}
+  m_Name: DestroyAfterTime
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[{"key":"Start","label":null,"summary":"start
+      the process","hideLabel":false}],"controlOutputDefinitions":[],"valueInputDefinitions":[{"hasDefaultValue":true,"defaultValue":{"$content":1.0,"$type":"System.Single"},"_type":"System.Single","key":"Duration","label":null,"summary":"Time
+      after which the object is destroyed","hideLabel":false},{"hasDefaultValue":false,"defaultValue":null,"_type":"UnityEngine.GameObject","key":"Target","label":null,"summary":null,"hideLabel":false}],"valueOutputDefinitions":[],"title":"DestroyAfterTimer","summary":"NEEDS
+      COROUTINE","pan":{"x":0.0,"y":0.0},"zoom":1.0,"elements":[{"defaultValues":{},"position":{"x":-488.0,"y":-149.0},"guid":"66500a65-02a1-4fba-91a5-ba30068b25ab","$version":"A","$type":"Bolt.GraphInput","$id":"12"},{"defaultValues":{},"position":{"x":315.0,"y":-144.0},"guid":"4a299569-c71e-4045-acd0-9a7ae370fc96","$version":"A","$type":"Bolt.GraphOutput"},{"defaultValues":{"duration":{"$content":1.0,"$type":"System.Single"},"unscaledTime":{"$content":false,"$type":"System.Boolean"}},"position":{"x":-240.0,"y":-148.0},"guid":"a3c97077-37a3-4fc6-8e6a-92873c85a323","$version":"A","$type":"Bolt.Timer","$id":"16"},{"chainable":false,"member":{"name":"Destroy","parameterTypes":["UnityEngine.Object"],"targetType":"UnityEngine.GameObject","targetTypeName":"UnityEngine.GameObject","$version":"A"},"defaultValues":{"%obj":null},"position":{"x":130.0,"y":-113.0},"guid":"cb0a8522-1ac0-4f99-9ed8-bba8cfc52063","$version":"A","$type":"Bolt.InvokeMember","$id":"18"},{"sourceUnit":{"$ref":"16"},"sourceKey":"completed","destinationUnit":{"$ref":"18"},"destinationKey":"enter","guid":"15b0a14e-d719-4652-ae08-88f1f86b9e96","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"12"},"sourceKey":"Start","destinationUnit":{"$ref":"16"},"destinationKey":"start","guid":"5b772e28-f82a-40c6-8860-3013ba22eaf0","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"12"},"sourceKey":"Duration","destinationUnit":{"$ref":"16"},"destinationKey":"duration","guid":"f3c32519-3b6c-4869-9926-3e7f34bc13b8","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"12"},"sourceKey":"Target","destinationUnit":{"$ref":"18"},"destinationKey":"%obj","guid":"d6a008fd-f4fe-4318-a464-41bdf3a3be9b","$type":"Bolt.ValueConnection"}],"$version":"A"}}'
+    _objectReferences: []
